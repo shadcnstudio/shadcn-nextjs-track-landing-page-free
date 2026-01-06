@@ -2,9 +2,9 @@ export const accordionDataV1_3_0 = [
   {
     type: 'new',
     items: [
-      '"Sync All" button for project-wide updates',
-      'Component diff viewer with inline changelog',
-      'Scoped sync — choose which namespaces or folders to update'
+      'Sync All button for project-wide updates',
+      'Component different viewer with inline changelog',
+      'Scoped sync choose which namespaces or folders to update'
     ]
   },
   {

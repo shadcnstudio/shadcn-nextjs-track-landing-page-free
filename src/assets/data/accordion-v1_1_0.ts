@@ -2,10 +2,10 @@ export const accordionDataV1_1_0 = [
   {
     type: 'new',
     items: [
-      'Complete token overhaul — unified color, spacing & typography system',
-      'Preset Themes — instantly apply predefined light/dark palettes',
-      'Global token inspector — view & edit all tokens in one place',
-      'Preview share links — generate temporary links to share progress with your team'
+      'Complete token overhaul unified color, spacing & typography system',
+      'Preset Themes instantly apply predefined light/dark palettes',
+      'Global token inspector view & edit all tokens in one place',
+      'Preview share links generate temporary links to share progress with your team'
     ]
   },
   {

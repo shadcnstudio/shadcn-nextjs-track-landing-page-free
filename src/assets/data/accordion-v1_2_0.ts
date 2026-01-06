@@ -2,17 +2,17 @@ export const accordionDataV1_2_0 = [
   {
     type: 'new',
     items: [
-      'Live Preview mode — instantly test UI changes inside the dashboard',
-      'One-click Deployment — push updates to production without leaving Studio',
-      'Multi-environment support — manage dev, staging, and production easily',
-      'Multi-environment support — manage dev, staging, and production easily'
+      'Live Preview mode instantly test UI changes inside the dashboard',
+      'One-click Deployment push updates to production without leaving Studio',
+      'Multi-environment support manage dev, staging, and production easily',
+      'Multi-environment support manage dev, staging, and production easily'
     ]
   },
   {
     type: 'updates',
     items: [
       'Improved preview performance for heavy UI blocks (+40% faster)',
-      'Smarter auto-refresh — reloads only the updated section, not the full screen'
+      'Smarter auto-refresh reloads only the updated section, not the full screen'
     ]
   },
   {

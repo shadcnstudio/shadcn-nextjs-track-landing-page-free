@@ -10,10 +10,10 @@ function v1_2_0() {
     <div>
       <TimelineItem date='March 22, 2025' version='v 1.2.0'>
         <div className='space-y-4'>
-          <h3 className='text-xl font-semibold'>Studio Dashboard — Live Preview & Deployment</h3>
+          <h3 className='text-xl font-semibold'>Studio Dashboard Live Preview & Deployment</h3>
           <p className='text-muted-foreground text-sm'>
             The new Studio Dashboard brings together everything you need to preview, test, and deploy your component
-            library — right from your browser.
+            library right from your browser.
           </p>
           <ul className='text-muted-foreground list-inside list-disc space-y-3 text-sm'>
             <li>Preview components in any framework (Next.js, Remix, Vite)</li>
@@ -33,7 +33,7 @@ function v1_2_0() {
             </div>
             {/* Angular */}
             <div className='bg-destructive/10 flex items-center gap-1.5 rounded-md px-3 py-1'>
-              <img src='/images/vite-logo.webp' alt='Vite' className='h-4.5' />
+              <img src='/images/angular-logo.webp' alt='Angular' className='h-4.5' />
               <span className='text-xs font-medium'>Angular</span>
             </div>
           </div>
