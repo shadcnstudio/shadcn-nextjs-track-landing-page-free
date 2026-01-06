@@ -1,34 +1,16 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Badge } from '@/components/ui/badge'
 
-const items = [
-  {
-    type: 'new',
-    items: [
-      '"Sync All" button for project-wide updates',
-      'Component diff viewer with inline changelog',
-      'Scoped sync — choose which namespaces or folders to update'
-    ]
-  },
-  {
-    type: 'updates',
-    items: [
-      'Faster load times in component explorer (-30%)',
-      'Auto-preview for dark/light theme variants',
-      'TypeScript types now update automatically when syncing'
-    ]
-  },
-  {
-    type: 'bugfixes',
-    items: [
-      'Fixed sync conflicts with large component libraries',
-      'Resolved memory leak in diff viewer',
-      'Fixed incorrect version detection for nested components'
-    ]
-  }
-]
+type AccordionItem = {
+  type: string
+  items: string[]
+}
 
-const AccordionDemo = () => {
+type AccordionDemoProps = {
+  data: AccordionItem[]
+}
+
+const AccordionDemo = ({ data }: AccordionDemoProps) => {
   const getBadgeProps = (type: string) => {
     switch (type) {
       case 'new':
@@ -64,7 +46,7 @@ const AccordionDemo = () => {
 
   return (
     <Accordion type='single' collapsible className='w-full' defaultValue='item-1'>
-      {items.map((item, index) => {
+      {data.map((item, index) => {
         const badgeProps = getBadgeProps(item.type)
 
         return (

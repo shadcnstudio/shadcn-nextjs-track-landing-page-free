@@ -4,7 +4,7 @@ import { Input } from '@/components/ui/input'
 
 function UpdateSection() {
   return (
-    <div className='space-y-4 px-8 py-16 text-center'>
+    <div className='space-y-4 px-4 py-8 text-center md:px-8 md:py-16'>
       <Badge className='text-sm font-normal' variant='outline'>
         Updates
       </Badge>

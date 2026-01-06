@@ -35,12 +35,12 @@ const Header = ({ navigationData, className }: HeaderProps) => {
 
         {/* Navigation */}
         <NavigationMenu className='max-md:hidden'>
-          <NavigationMenuList className='flex-wrap justify-start gap-0'>
+          <NavigationMenuList className='flex-wrap justify-start gap-5 lg:gap-12'>
             {navigationData.map(navItem => (
               <NavigationMenuItem key={navItem.title}>
                 <NavigationMenuLink
                   href={navItem.href}
-                  className='text-muted-foreground hover:text-primary px-3 py-1.5 text-base! font-medium hover:bg-transparent'
+                  className='text-muted-foreground hover:text-primary p-0 text-base! font-medium hover:bg-transparent'
                 >
                   {navItem.title}
                 </NavigationMenuLink>
