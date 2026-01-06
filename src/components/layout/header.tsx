@@ -1,46 +1,81 @@
-'use client'
-
-import { usePathname } from 'next/navigation'
-import Link from 'next/link'
+import { MenuIcon } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList
+} from '@/components/ui/navigation-menu'
 import { ModeToggle } from '@/components/layout/mode-toggle'
 
 import { cn } from '@/lib/utils'
 
-const Header = () => {
-  const pathname = usePathname()
+import Logo from '@/components/logo'
 
+export type NavigationSection = {
+  title: string
+  href: string
+}
+
+type HeaderProps = {
+  navigationData: NavigationSection[]
+  className?: string
+}
+
+const Header = ({ navigationData, className }: HeaderProps) => {
   return (
-    <div className='flex h-16 items-center justify-between gap-4 border-b px-6'>
-      <Link href='/'>Template Name</Link>
+    <header className={cn('bg-background sticky top-0 z-50 h-16', className)}>
+      <div className='mx-auto flex h-full max-w-5xl items-center justify-between gap-6 px-4 py-3 sm:px-6 lg:px-8'>
+        {/* Logo */}
+        <a href='/'>
+          <Logo className='gap-3' />
+        </a>
 
-      <nav className='flex items-center gap-4'>
-        <Link
-          href='/'
-          className={cn('text-muted-foreground hover:text-foreground active:text-foreground font-medium', {
-            'text-primary': pathname === '/'
-          })}
-        >
-          Home
-        </Link>
-        <Link
-          href='/contact'
-          className={cn('text-muted-foreground hover:text-foreground active:text-foreground font-medium', {
-            'text-primary': pathname === '/contact'
-          })}
-        >
-          Contact
-        </Link>
-      </nav>
+        {/* Navigation */}
+        <NavigationMenu className='max-md:hidden'>
+          <NavigationMenuList className='flex-wrap justify-start gap-0'>
+            {navigationData.map(navItem => (
+              <NavigationMenuItem key={navItem.title}>
+                <NavigationMenuLink
+                  href={navItem.href}
+                  className='text-muted-foreground hover:text-primary px-3 py-1.5 text-base! font-medium hover:bg-transparent'
+                >
+                  {navItem.title}
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
 
-      <div className='flex items-center gap-2'>
-        <ModeToggle />
-        <Button variant='outline' asChild>
-          <Link href='/login'>Login</Link>
-        </Button>
+        {/* Toggle button */}
+        <div className='max-md:hidden'>
+          <ModeToggle />
+        </div>
+
+        {/* Navigation for small screens */}
+        <div className='flex gap-4 md:hidden'>
+          <ModeToggle />
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant='outline' size='icon'>
+                <MenuIcon />
+                <span className='sr-only'>Menu</span>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className='w-56' align='end'>
+              {navigationData.map((item, index) => (
+                <DropdownMenuItem key={index}>
+                  <a href={item.href}>{item.title}</a>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
       </div>
-    </div>
+      <div className='via-primary/20 mx-auto h-px w-4/5 bg-gradient-to-r from-transparent to-transparent'></div>
+    </header>
   )
 }
 

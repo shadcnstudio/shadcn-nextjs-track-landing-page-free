@@ -7,5 +7,3 @@ Sitemap: https://shadcnstudio.com/sitemap.xml
 # Disallow specific paths
 Disallow: /private/*
 Disallow: /*?*                        # Disallow URLs with a query string
-Disallow: /login                      # Exclude login page
-Disallow: /register                   # Exclude registration page
