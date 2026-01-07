@@ -1,4 +1,4 @@
-import CopyCodeBlock from '@/components/copy-code'
+import CopyCode from '@/components/copy-code'
 
 const codeExample = `// Example of updated API usage
 const agent = new AIAgent({
@@ -7,10 +7,10 @@ const agent = new AIAgent({
   multiModal: true,
 });`
 
-export default function App() {
+export default function CopyCodeBlock() {
   return (
     <div>
-      <CopyCodeBlock code={codeExample} />
+      <CopyCode code={codeExample} />
     </div>
   )
 }

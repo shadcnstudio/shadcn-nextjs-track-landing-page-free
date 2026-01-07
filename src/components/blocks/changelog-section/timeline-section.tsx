@@ -1,8 +1,6 @@
-import React from 'react'
-
-import V1_3_0 from '@/components/blocks/changelog-content-section/v1_3_0'
-import V1_2_0 from '@/components/blocks/changelog-content-section/v1_2_0 '
-import V1_1_0 from '@/components/blocks/changelog-content-section/v1_1_0 '
+import V1_3_0 from '@/components/blocks/changelog-section/v1_3_0'
+import V1_2_0 from '@/components/blocks/changelog-section/v1_2_0 '
+import V1_1_0 from '@/components/blocks/changelog-section/v1_1_0 '
 
 function TimelineSection() {
   return (

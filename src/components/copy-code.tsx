@@ -4,12 +4,12 @@ import { useState } from 'react'
 
 import { Copy, Check } from 'lucide-react'
 
-type CopyCodeBlockProps = {
+type CopyCodeProps = {
   code: string
   language?: string
 }
 
-export default function CopyCodeBlock({ code = 'javascript' }: CopyCodeBlockProps) {
+export default function CopyCode({ code = 'javascript' }: CopyCodeProps) {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = async () => {

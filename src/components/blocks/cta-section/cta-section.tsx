@@ -1,5 +1,7 @@
 import { ArrowRightIcon } from 'lucide-react'
 
+import Link from 'next/link'
+
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 
@@ -19,10 +21,10 @@ const CTASection = () => {
             </div>
             <div>
               <Button size='lg' variant='secondary' className='shrink-0 rounded-lg text-base has-[>svg]:px-6' asChild>
-                <a href='#' className='inline-flex items-center gap-2'>
+                <Link href='#' className='inline-flex items-center gap-2'>
                   View Docs
                   <ArrowRightIcon className='size-5' />
-                </a>
+                </Link>
               </Button>
             </div>
           </CardContent>

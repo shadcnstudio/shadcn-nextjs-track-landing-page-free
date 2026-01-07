@@ -1,8 +1,6 @@
-import React from 'react'
-
 import TimelineItem from '@/components/timeline/timeline-items'
-import Accordion from '@/components/accordion/accordion'
-import { accordionDataV1_3_0 } from '@/assets/data/accordion-v1_3_0'
+import Accordion from '@/components/badge-accordion/badge-accordion'
+import { accordionDataV1_3_0 } from '@/assets/data/changelog-data'
 
 function v1_3_0() {
   return (

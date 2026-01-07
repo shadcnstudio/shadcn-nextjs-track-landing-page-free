@@ -1,5 +1,7 @@
 import { MenuIcon } from 'lucide-react'
 
+import Link from 'next/link'
+
 import { Button } from '@/components/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 import {
@@ -29,7 +31,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
     <header className={cn('bg-background sticky top-0 z-50 h-16', className)}>
       <div className='mx-auto flex h-full max-w-5xl items-center justify-between gap-6 px-4 py-3 sm:px-6 lg:px-8'>
         {/* Logo */}
-        <a href='/'>
+        <a href='/#'>
           <Logo className='gap-3' />
         </a>
 
@@ -40,7 +42,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
               <NavigationMenuItem key={navItem.title}>
                 <NavigationMenuLink
                   href={navItem.href}
-                  className='text-muted-foreground hover:text-primary p-0 text-base! font-medium hover:bg-transparent'
+                  className='text-muted-foreground hover:text-primary text-base! font-medium hover:bg-transparent'
                 >
                   {navItem.title}
                 </NavigationMenuLink>
@@ -67,7 +69,7 @@ const Header = ({ navigationData, className }: HeaderProps) => {
             <DropdownMenuContent className='w-56' align='end'>
               {navigationData.map((item, index) => (
                 <DropdownMenuItem key={index}>
-                  <a href={item.href}>{item.title}</a>
+                  <Link href={item.href}>{item.title}</Link>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>

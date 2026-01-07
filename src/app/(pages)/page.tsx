@@ -1,6 +1,6 @@
 import HeroSection from '@/components/blocks/hero-section/hero-section'
-import TimelineSection from '@/components/blocks/changelog-content-section/timeline-section'
-import FAQ from '@/components/blocks/faq-component/faq-component'
+import TimelineSection from '@/components/blocks/changelog-section/timeline-section'
+import FAQ from '@/components/blocks/faq-section/faq-section'
 import CTA from '@/components/blocks/cta-section/cta-section'
 
 import { faqItems } from '@/assets/data/faq-content'

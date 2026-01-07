@@ -1,8 +1,6 @@
-import React from 'react'
-
 import TimelineItem from '@/components/timeline/timeline-items'
-import Accordion from '@/components/accordion/accordion'
-import { accordionDataV1_1_0 } from '@/assets/data/accordion-v1_1_0'
+import Accordion from '@/components/badge-accordion/badge-accordion'
+import { accordionDataV1_1_0 } from '@/assets/data/changelog-data'
 import { Button } from '@/components/ui/button'
 
 function v1_1_0() {
@@ -13,8 +11,8 @@ function v1_1_0() {
           <div className='5 space-y-1'>
             <h3 className='text-xl font-semibold'>Design Tokens 2.0 Global Theme Rebuild</h3>
             <p className='text-muted-foreground text-sm'>
-              We’ve completely redesigned the theme system for Design Tokens 2.0. Tokens are now hierarchical, semantic,
-              and fully type-safe — built for scaling design systems.
+              We&apos;ve completely redesigned the theme system for Design Tokens 2.0. Tokens are now hierarchical,
+              semantic, and fully type-safe — built for scaling design systems.
             </p>
           </div>
           <img src='/images/image-2.webp' alt='Design Tokens 2.0 Demo' />
