@@ -45,7 +45,7 @@ const AccordionDemo = ({ data }: AccordionDemoProps) => {
   }
 
   return (
-    <Accordion type='single' collapsible className='w-full' defaultValue='item-1'>
+    <Accordion type='single' collapsible className='-mt-4 mb-0 w-full' defaultValue='item-1'>
       {data.map((item, index) => {
         const badgeProps = getBadgeProps(item.type)
 
