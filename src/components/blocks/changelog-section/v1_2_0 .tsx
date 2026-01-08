@@ -13,26 +13,28 @@ function v1_2_0() {
             The new Studio Dashboard brings together everything you need to preview, test, and deploy your component
             library right from your browser.
           </p>
-          <ul className='text-muted-foreground list-inside list-disc space-y-3 text-sm'>
-            <li>Preview components in any framework (Next.js, Remix, Vite)</li>
-            <li>One-click deploy to Vercel</li>
-            <li>Real-time preview links for teams</li>
-          </ul>
-          <div className='fle-wrap flex items-center gap-4'>
-            {/* vite */}
-            <div className='flex items-center gap-1.5 rounded-md bg-amber-600/10 px-3 py-1 dark:bg-amber-400/10'>
-              <img src='/images/vite-logo.webp' alt='Vite' className='h-4.5' />
-              <span className='text-xs font-medium'>Vite</span>
-            </div>
-            {/* React */}
-            <div className='flex items-center gap-1.5 rounded-md bg-sky-600/10 px-3 py-1 dark:bg-sky-400/10'>
-              <img src='/images/react-logo.webp' alt='React' className='h-4.5' />
-              <span className='text-xs font-medium'>React</span>
-            </div>
-            {/* Angular */}
-            <div className='bg-destructive/10 flex items-center gap-1.5 rounded-md px-3 py-1'>
-              <img src='/images/angular-logo.webp' alt='Angular' className='h-4.5' />
-              <span className='text-xs font-medium'>Angular</span>
+          <div className='space-y-3'>
+            <ul className='text-muted-foreground list-inside list-disc space-y-3 text-sm'>
+              <li>Preview components in any framework (Next.js, Remix, Vite)</li>
+              <li>One-click deploy to Vercel</li>
+              <li>Real-time preview links for teams</li>
+            </ul>
+            <div className='fle-wrap flex items-center gap-4'>
+              {/* vite */}
+              <div className='flex items-center gap-1.5 rounded-md bg-amber-600/10 px-3 py-1 dark:bg-amber-400/10'>
+                <img src='/images/vite-logo.webp' alt='Vite' className='h-4.5' />
+                <span className='text-xs font-medium'>Vite</span>
+              </div>
+              {/* React */}
+              <div className='flex items-center gap-1.5 rounded-md bg-sky-600/10 px-3 py-1 dark:bg-sky-400/10'>
+                <img src='/images/react-logo.webp' alt='React' className='h-4.5' />
+                <span className='text-xs font-medium'>React</span>
+              </div>
+              {/* Angular */}
+              <div className='bg-destructive/10 flex items-center gap-1.5 rounded-md px-3 py-1'>
+                <img src='/images/angular-logo.webp' alt='Angular' className='h-4.5' />
+                <span className='text-xs font-medium'>Angular</span>
+              </div>
             </div>
           </div>
           <CopyCode />

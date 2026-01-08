@@ -7,11 +7,13 @@ function v1_3_0() {
     <div>
       <TimelineItem date='November 7, 2025' version='v 1.3.0'>
         <div className='space-y-4'>
-          <h3 className='text-xl font-semibold'>Component Sync Unified Library Management (Beta)</h3>
-          <p className='text-muted-foreground text-sm'>
-            We’re launching Component Sync, a new way to manage, version, and update all your shadcn components across
-            projects with a single click.
-          </p>
+          <div className='space-y-3'>
+            <h3 className='text-xl font-semibold'>Component Sync Unified Library Management (Beta)</h3>
+            <p className='text-muted-foreground text-sm'>
+              We’re launching Component Sync, a new way to manage, version, and update all your shadcn components across
+              projects with a single click.
+            </p>
+          </div>
           <div className='space-y-3'>
             <p className='font-medium'>Now you can:</p>
             <ul className='text-muted-foreground list-inside list-disc space-y-3 text-sm'>

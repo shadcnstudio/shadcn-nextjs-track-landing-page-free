@@ -14,11 +14,30 @@ export default function CopyCode({ code = 'javascript' }: CopyCodeProps) {
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(code)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 1500)
+      // Check if clipboard API is available
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(code)
+        setCopied(true)
+        setTimeout(() => setCopied(false), 1500)
+      } else {
+        // Fallback method for older browsers or non-secure contexts
+        const textArea = document.createElement('textarea')
+
+        textArea.value = code
+        textArea.style.position = 'absolute'
+        textArea.style.left = '-999999px'
+        document.body.prepend(textArea)
+        textArea.select()
+        document.execCommand('copy')
+        textArea.remove()
+        setCopied(true)
+        setTimeout(() => setCopied(false), 1500)
+      }
     } catch (err) {
       console.error('Failed to copy', err)
+
+      // Show user feedback even if copy failed
+      alert('Failed to copy code to clipboard')
     }
   }
 

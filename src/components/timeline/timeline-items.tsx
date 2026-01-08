@@ -11,7 +11,7 @@ type TimelineItemProps = {
 const TimelineItem = ({ date, version, children }: TimelineItemProps) => {
   return (
     <div id={version} className='relative flex scroll-mt-18 justify-end gap-2'>
-      <div className='sticky top-19 flex w-36 flex-col items-end gap-2 self-start max-md:hidden'>
+      <div className='sticky top-19 flex w-36 flex-col items-end gap-2 self-start pb-4 max-md:hidden'>
         <Badge className='flex size-6 w-auto justify-end rounded-sm text-sm font-medium'>{version}</Badge>
         <div className='text-muted-foreground text-right text-sm font-medium'>{date}</div>
       </div>
@@ -21,9 +21,9 @@ const TimelineItem = ({ date, version, children }: TimelineItemProps) => {
             <span className='bg-primary size-3 rounded-full' />
           </span>
         </div>
-        <span className='border-primary/20 w-px flex-1 border' />
+        <span className='w-px flex-1 border' />
       </div>
-      <div className='flex flex-1 flex-col gap-4 pb-11 pl-9'>
+      <div className='flex flex-1 flex-col gap-4 ps-3 pb-11 md:ps-6 lg:ps-9'>
         <div className='flex flex-col gap-2 md:hidden'>
           <Badge className='flex rounded-sm font-medium'>{version}</Badge>
           <div className='font-medium'>{date}</div>

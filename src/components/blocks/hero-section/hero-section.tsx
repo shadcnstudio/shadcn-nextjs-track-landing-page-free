@@ -12,7 +12,7 @@ function HeroSection() {
       <p className='text-muted-foreground text-xl'>See what&apos;s new added, changed, fixed, improved or updated.</p>
       <div className='mx-auto flex max-w-sm gap-3 max-sm:flex-col max-sm:items-center'>
         <Input type='text' placeholder='Your email' className='bg-background h-10 flex-1' />
-        <Button size='lg' className='rounded-lg text-base'>
+        <Button size='lg' className='rounded-lg text-base max-sm:w-full'>
           Subscribe
         </Button>
       </div>

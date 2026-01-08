@@ -28,7 +28,7 @@ type HeaderProps = {
 
 const Header = ({ navigationData, className }: HeaderProps) => {
   return (
-    <header className={cn('bg-background sticky top-0 z-50 h-16', className)}>
+    <header className={cn('bg-background sticky top-0 z-50 h-17.5', className)}>
       <div className='mx-auto flex h-full max-w-5xl items-center justify-between gap-6 px-4 py-3 sm:px-6 lg:px-8'>
         {/* Logo */}
         <a href='/#'>
