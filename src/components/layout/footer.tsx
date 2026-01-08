@@ -10,11 +10,11 @@ const Footer = () => {
   return (
     <footer>
       <div className='mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-4 max-md:flex-col sm:px-8 sm:py-6 md:gap-6 md:py-8'>
-        <a href='/#'>
+        <Link href='/#home'>
           <div className='flex items-center gap-3'>
             <Logo className='gap-3' />
           </div>
-        </a>
+        </Link>
 
         <div className='flex items-center gap-5 whitespace-nowrap lg:gap-12'>
           {navigationData.map(item => (
