@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge'
 type AccordionItem = {
   type: string
   items: string[]
+  badges?: string[]
 }
 
 type BadgeAccordionProps = {
@@ -60,6 +61,15 @@ const BadgeAccordion = ({ data }: BadgeAccordionProps) => {
                   <li key={listIndex}>{listItem}</li>
                 ))}
               </ul>
+              {item.badges && (
+                <div className='mt-4 flex flex-wrap items-center gap-2'>
+                  {item.badges.map((badge, badgeIndex) => (
+                    <div key={badgeIndex} className='bg-primary/10 text-destructive rounded-md px-3 py-1 text-xs'>
+                      {badge}
+                    </div>
+                  ))}
+                </div>
+              )}
             </AccordionContent>
           </AccordionItem>
         )

@@ -21,7 +21,8 @@ export const accordionDataV1_3_0 = [
       'Fixed sync conflicts with large component libraries',
       'Resolved memory leak in diff viewer',
       'Fixed incorrect version detection for nested components'
-    ]
+    ],
+    badges: ['/v1/components/sync', '/v1/components/pull', '--interactive']
   }
 ]
 export const accordionDataV1_2_0 = [

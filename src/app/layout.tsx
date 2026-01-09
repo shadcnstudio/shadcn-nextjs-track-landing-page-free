@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Track',
-    default: 'Track - Changelog Landing Page'
+    template: 'Demo: %s - Track | Shadcn Studio',
+    default: 'Demo: Track - Changelog Landing Page | Shadcn Studio'
   },
   description:
     'A clean, centralized page that highlights product updates, improvements, and fixes so users can quickly see what’s new.',
@@ -68,10 +68,11 @@ export const metadata: Metadata = {
       }
     ]
   },
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_APP_URL}`),
   openGraph: {
     title: {
-      template: '%s - Track',
-      default: 'Track - Changelog Landing Page'
+      template: 'Demo: %s - Track | Shadcn Studio',
+      default: 'Demo: Track - Changelog Landing Page | Shadcn Studio'
     },
     description:
       'A clean, centralized page that highlights product updates, improvements, and fixes so users can quickly see what’s new.',
@@ -91,8 +92,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: {
-      template: '%s - Track',
-      default: 'Track - Changelog Landing Page'
+      template: 'Demo: %s - Track | Shadcn Studio',
+      default: 'Demo: Track - Changelog Landing Page | Shadcn Studio'
     },
     description:
       'A clean, centralized page that highlights product updates, improvements, and fixes so users can quickly see what’s new.'

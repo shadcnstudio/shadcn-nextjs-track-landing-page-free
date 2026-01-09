@@ -1,18 +1,14 @@
 export const navigationData = [
   {
-    title: 'Home',
+    title: 'Support',
     href: '#'
   },
   {
-    title: 'Product',
+    title: 'Licence',
     href: '#'
   },
   {
-    title: 'About Us',
-    href: '#'
-  },
-  {
-    title: 'Contacts',
+    title: 'Article',
     href: '#'
   }
 ]
