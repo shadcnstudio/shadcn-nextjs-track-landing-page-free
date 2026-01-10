@@ -24,11 +24,6 @@ function v1_3_0() {
           </div>
           <img src='/images/image-1.webp' alt='Component Sync Demo' />
           <Accordion data={accordionDataV1_3_0} />
-          {/* <div className='flex flex-wrap items-center gap-4'>
-            <div className='bg-primary/10 text-destructive rounded-md px-3 py-1 text-xs'>/v1/components/sync</div>
-            <div className='bg-primary/10 text-destructive rounded-md px-3 py-1 text-xs'>/v1/components/pull</div>
-            <div className='bg-primary/10 text-destructive rounded-md px-3 py-1 text-xs'>--interactive</div>
-          </div> */}
         </div>
       </TimelineItem>
     </div>
