@@ -54,12 +54,6 @@
       "short_name": "Home",
       "description": "Go to homepage",
       "url": "/"
-    },
-    {
-      "name": "Blog",
-      "short_name": "Blog",
-      "description": "Read our blog",
-      "url": "/blog"
     }
   ]
 }
