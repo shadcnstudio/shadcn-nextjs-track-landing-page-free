@@ -111,7 +111,7 @@ An open-source & premium collection of copy-and-paste shadcn components, blocks,
 
 ## Documentation 📚
 
-For comprehensive documentation, please visit [shadcn/studio documentation](https://shadcnstudio.com/docs/getting-started/introduction).
+For comprehensive documentation, please visit [shadcn/studio documentation](https://shadcnstudio.com/docs/getting-started/shadcn-studio-template-nextjs).
 
 ## Community 🤝
 

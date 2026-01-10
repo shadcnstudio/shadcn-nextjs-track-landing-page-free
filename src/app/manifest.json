@@ -1,6 +1,18 @@
 {
   "name": "Template Name - Template Slogan",
   "short_name": "Template Name",
+  "description": "Build lightning-fast, SEO-optimized websites with Astro, shadcn/ui, and Tailwind CSS",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "categories": [
+    "productivity",
+    "business",
+    "development"
+  ],
   "icons": [
     {
       "src": "/favicon/android-chrome-192x192.png",
@@ -26,6 +38,28 @@
       "src": "/favicon/favicon-16x16.png",
       "sizes": "16x16",
       "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "description": "Go to homepage",
+      "url": "/"
+    },
+    {
+      "name": "Blog",
+      "short_name": "Blog",
+      "description": "Read our blog",
+      "url": "/blog"
     }
   ]
 }

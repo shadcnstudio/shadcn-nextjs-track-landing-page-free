@@ -2,7 +2,7 @@ User-Agent: *
 Allow: /
 
 # Sitemap locations
-Sitemap: https://shadcnstudio.com/sitemap.xml
+Sitemap: https://shadcn-nextjs-track-landing-page.vercel.app/sitemap.xml
 
 # Disallow specific paths
 Disallow: /private/*

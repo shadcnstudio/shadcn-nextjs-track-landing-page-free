@@ -1,0 +1,45 @@
+name: Deploy - Demos
+run-name: ${{ github.ref_name == 'main' && '🚀' || '🧪' }} Deploy - Demos
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⚙️ Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: ⬇️ Checkout current repo
+        uses: actions/checkout@v4
+        with:
+          path: shadcn-studio/internal
+
+      - name: ⬇️ Checkout automation-scripts repo
+        uses: actions/checkout@v4
+        with:
+          repository: themeselection/automation-scripts
+          token: ${{ secrets.GH_PAT }}
+          path: automation-scripts
+
+      - name: ⬇️ Install packages in automation-scripts dir
+        working-directory: automation-scripts/nextjs
+        run: pnpm i
+
+      - name: ⬇️ Install packages in current repo
+        working-directory: shadcn-studio/internal
+        run: pnpm i
+
+      - name: 📦 Build
+        working-directory: automation-scripts/nextjs
+        run: pnpm install vercel && pnpm tsx ./src/shadcn-studio/template/generateBuild.ts $([[ "${{ github.ref_name == 'main' }}" == "true" ]] && echo --prod) --vercel-token ${{ secrets.VERCEL_TOKEN }}
+
+      - name: 🚀 Deploy to Vercel
+        working-directory: shadcn-studio/internal
+        run: pnpm install -w vercel && pnpm exec vercel $([[ "${{ github.ref_name == 'main' }}" == "true" ]] && echo --prod) --prebuilt --token ${{ secrets.VERCEL_TOKEN }}

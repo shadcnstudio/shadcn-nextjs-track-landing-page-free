@@ -5,6 +5,21 @@ import CTA from '@/components/blocks/cta-section/cta-section'
 
 import { faqItems } from '@/assets/data/faq-content'
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      '@id': `${process.env.NEXT_PUBLIC_APP_URL}#website`,
+      name: 'Template Name',
+      description: 'Template Description',
+      url: `${process.env.NEXT_PUBLIC_APP_URL}`,
+      inLanguage: 'en-US'
+    }
+  ]
+}
+
 const Home = () => {
   return (
     <div>
@@ -14,6 +29,12 @@ const Home = () => {
       <div className='via-primary/20 mx-auto h-px w-4/5 bg-gradient-to-r from-transparent to-transparent'></div>
       <FAQ faqItems={faqItems} />
       <CTA />
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c')
+        }}
+      />
     </div>
   )
 }
