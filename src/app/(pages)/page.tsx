@@ -12,8 +12,9 @@ const jsonLd = {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
       '@id': `${process.env.NEXT_PUBLIC_APP_URL}#website`,
-      name: 'Template Name',
-      description: 'Template Description',
+      name: 'Track',
+      description:
+        'A clean, centralized page that highlights product updates, improvements, and fixes so users can quickly see what’s new.',
       url: `${process.env.NEXT_PUBLIC_APP_URL}`,
       inLanguage: 'en-US'
     }
@@ -24,9 +25,9 @@ const Home = () => {
   return (
     <div>
       <HeroSection />
-      <div className='via-primary/20 mx-auto h-px w-4/5 bg-gradient-to-r from-transparent to-transparent'></div>
+      <div className='via-primary/20 mx-auto h-px w-4/5 bg-linear-to-r from-transparent to-transparent'></div>
       <TimelineSection />
-      <div className='via-primary/20 mx-auto h-px w-4/5 bg-gradient-to-r from-transparent to-transparent'></div>
+      <div className='via-primary/20 mx-auto h-px w-4/5 bg-linear-to-r from-transparent to-transparent'></div>
       <FAQ faqItems={faqItems} />
       <CTA />
       <script
