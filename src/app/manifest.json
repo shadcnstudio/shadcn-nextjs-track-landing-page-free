@@ -1,7 +1,7 @@
 {
-  "name": "Template Name - Template Slogan",
-  "short_name": "Template Name",
-  "description": "Build lightning-fast, SEO-optimized websites with Astro, shadcn/ui, and Tailwind CSS",
+  "name": "Track - Changelog Landing Page | Shadcn Studio",
+  "short_name": "Track",
+  "description": "A clean, centralized page that highlights product updates, improvements, and fixes so users can quickly see what’s new.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
