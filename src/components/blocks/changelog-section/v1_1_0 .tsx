@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import TimelineItem from '@/components/timeline/timeline-items'
 import Accordion from '@/components/badge-accordion/badge-accordion'
 import { accordionDataV1_1_0 } from '@/assets/data/changelog-data'
@@ -26,7 +28,9 @@ function v1_1_0() {
             consistent visuals across all environments. Tokens for colors, spacing, typography, and more are now fully
             type-safe and easily customizable, ensuring that your design system can grow alongside your projects.{' '}
           </p>
-          <Button>Read More</Button>
+          <Button asChild>
+            <Link href='#'>Read More</Link>
+          </Button>
           <Accordion data={accordionDataV1_1_0} />
         </div>
       </TimelineItem>
