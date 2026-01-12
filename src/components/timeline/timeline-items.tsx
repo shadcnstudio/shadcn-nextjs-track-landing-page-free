@@ -23,7 +23,7 @@ const TimelineItem = ({ date, version, children }: TimelineItemProps) => {
         </div>
         <span className='w-px flex-1 border' />
       </div>
-      <div className='flex flex-1 flex-col gap-4 ps-3 pb-11 md:ps-6 lg:ps-9'>
+      <div className='flex flex-1 flex-col gap-4 pb-11 pl-3 md:pl-6 lg:pl-9'>
         <div className='flex flex-col gap-2 md:hidden'>
           <Badge className='flex rounded-sm font-medium'>{version}</Badge>
           <div className='font-medium'>{date}</div>

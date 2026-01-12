@@ -8,11 +8,15 @@ All notable changes to this template will be documented in this file
 
 ### Added
 
-- Initial release of Track Changelog Landing Page
-- Responsive layout with mobile-first approach
-- Hero section with compelling call-to-action
-- Changelog section with version timeline
-- FAQ section with accordion component
-- Version with Dates release notes
-- Light and dark mode support
-- Built with Next.js, Tailwind CSS, and shadcn/ui components
+- Initial release
+- Contains following sections
+  - Header
+  - Hero Section
+  - Changelog Timeline
+  - FAQ
+  - CTA
+  - Footer
+- Responsive Design
+- Dark/Light Mode Toggle
+- Smooth Scrolling
+- SEO Optimization
