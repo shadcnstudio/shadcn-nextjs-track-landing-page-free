@@ -1,10 +1,13 @@
-import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from 'lucide-react'
-
 import Link from 'next/link'
 
 import { navigationData } from '@/assets/data/navigation'
 
 import Logo from '@/components/logo'
+
+import FacebookIcon from '@/assets/svg/facebook-icon'
+import InstagramIcon from '@/assets/svg/instagram-icon'
+import TwitterIcon from '@/assets/svg/twitter-icon'
+import YoutubeIcon from '@/assets/svg/youtube-icon'
 
 const Footer = () => {
   return (

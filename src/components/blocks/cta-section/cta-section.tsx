@@ -20,7 +20,12 @@ const CTASection = () => {
               </p>
             </div>
             <div>
-              <Button size='lg' variant='secondary' className='shrink-0 rounded-lg text-base has-[>svg]:px-6' asChild>
+              <Button
+                size='lg'
+                variant='secondary'
+                className='shrink-0 rounded-lg px-6 text-base has-[>svg]:px-6'
+                asChild
+              >
                 <Link href='#' className='inline-flex items-center gap-2'>
                   View Docs
                   <ArrowRightIcon className='size-5' />

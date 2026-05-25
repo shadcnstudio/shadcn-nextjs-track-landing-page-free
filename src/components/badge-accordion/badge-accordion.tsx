@@ -52,7 +52,7 @@ const BadgeAccordion = ({ data }: BadgeAccordionProps) => {
 
         return (
           <AccordionItem key={index} value={`item-${index + 1}`}>
-            <AccordionTrigger className='hover:no-underline [&>svg]:size-6'>
+            <AccordionTrigger className='px-0 hover:no-underline [&>svg]:size-6!'>
               <Badge className={badgeProps.className}>{badgeProps.label}</Badge>
             </AccordionTrigger>
             <AccordionContent className='text-muted-foreground'>
