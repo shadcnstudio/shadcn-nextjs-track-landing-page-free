@@ -1,16 +1,76 @@
-<p align="center"></p>
-
 <p align="center">
-   <a href="https://shadcnstudio.com" target="_blank">
-      <img src="https://cdn.shadcnstudio.com/ss-assets/logo/logo.png" alt="$brand_name-logo" width="40px" height="auto">
+   <a href="https://shadcnstudio.com/templates/track-changelog-template-free" target="_blank">
+      <img src="https://cdn.shadcnstudio.com/ss-assets/template/landing-page/track/logo.png" alt="track-logo" width="32px" height="32px">
    </a>
 </p>
 
 <h1 align="center">
-   <a href="https://shadcnstudio.com" target="_blank" align="center">
-      shadcn/studio
+   <a href="https://shadcnstudio.com/templates/track-changelog-template-free" target="_blank" align="center">
+      Track - Shadcn UI Changelog Landing Page Template - Free
    </a>
 </h1>
+
+<p align="start">Track is a Free Shadcn UI Changelog Landing Page template to publish updates, releases, fixes, and improvements with clarity and consistency.</p>
+
+![GitHub](https://img.shields.io/github/license/shadcnstudio/shadcn-nextjs-track-landing-page-free) ![GitHub issues](https://img.shields.io/github/issues/shadcnstudio/shadcn-nextjs-track-landing-page-free) ![GitHub closed issues](https://img.shields.io/github/issues-closed/shadcnstudio/shadcn-nextjs-track-landing-page-free) ![Twitter Follow](https://img.shields.io/twitter/follow/ShadcnStudio?style=social)
+
+<kbd>[![Track - Shadcn UI Changelog Landing Page Template Demo Screenshot](https://cdn.shadcnstudio.com/ss-assets/landing-page/template-page/template-detail-page/landing-page/track/og-image.png)](https://shadcnstudio.com/templates/track-changelog-template-free)</kbd>
+
+## Introduction 🚀
+
+Track is a Free Shadcn UI Changelog Landing Page template to publish updates, releases, fixes, and improvements with clarity and consistency. Designed for SaaS products, startups, and development teams, Track delivers a transparent, professional experience with structured content, smooth animations, and easy customization.
+
+[View Demo](https://shadcnstudio.com/preview/templates/shadcn-nextjs-track-landing-page)
+
+[View Documentation](https://shadcnstudio.com/docs/getting-started/shadcn-studio-template-nextjs)
+
+<p>
+  Supported by
+  <a href="https://shadcnstudio.com" target="_blank">
+    Shadcn Studio
+  </a>
+  , with a commitment to empowering the open-source community.
+</p>
+
+## Key Features ✨
+
+- **Changelog-Focused Sections** - Versioned updates, release summaries, feature additions, improvements, bug fixes, FAQs, and footer structured for clear product communication
+- **Creative Animations & Design** - Smooth animations and thoughtfully crafted visual design that's easy to customize and extend
+- **Built with Next.js** - Server-side rendering, optimal performance, and built-in SEO capabilities
+- **Tailwind CSS v4+ Ready** - Fully compatible with Tailwind CSS 4+, leveraging the latest utilities and design tokens
+- **Powered by Pro Blocks** - Built using production-ready UI sections that follow best practices in accessibility and scalability
+- **Figma Design Files Included** - Complete design files for customization, handoff, and maintaining design-to-code parity
+- **Multiple Theme Support** - Easily switch between light, dark, and system themes with custom shadcn themes
+- **Mobile-First & Fully Responsive** - Designed with a mobile-first approach for seamless experiences across all devices
+- **Fast & SEO-Optimized** - Optimized for speed, Core Web Vitals, and SEO to help your site rank better
+- **Hassle-Free Support** - Reliable and responsive support from the creators for setup and customization
+
+## Page Structure & Sections
+
+**Pages**
+
+- **Homepage** - Hero section with featured changelog sections, version overview, and latest updates
+- **Changelog Timeline** - Structured versioned updates with timeline view showing all releases and improvements
+- **Release Details** - Detailed release page with features added, bug fixes, improvements, and version history
+- **FAQ Section** - Frequently asked questions with accordion interface for easy browsing
+
+**Key UI Sections**
+
+- **Hero Section** - Customizable headline and call-to-action to introduce your product's story
+- **Version Timeline** - Visual timeline displaying all major releases and updates chronologically
+- **Feature Highlights** - Showcase new features, improvements, and bug fixes clearly organized
+- **Release Summary** - Quick overview of what's new, changed, and fixed in each version
+- **FAQ Block** - Common questions answered with expandable accordion component
+- **CTA Blocks** - Convert users with strategically placed call-to-action sections
+- **Footer** - Social links, navigation, and support information
+
+---
+
+<br />
+
+<a href="https://shadcnstudio.com" target="_blank">
+  <img src="https://cdn.shadcnstudio.com/ss-assets/smm/marketing/shadcn-studio-smm-banner.png" alt="shadcn/studio banner" width="1200">
+</a>
 
 <p>
    <a href="https://shadcnstudio.com" target="_blank">
@@ -18,35 +78,6 @@
    </a>
    is an open-source collection of copy-and-paste shadcn components, blocks, and templates - paired with a powerful theme generator & AI Tools to craft, customize, and ship faster. 🚀
 </p>
-
-<a href="https://shadcnstudio.com" target="_blank">
-  <img src="https://cdn.shadcnstudio.com/ss-assets/smm/marketing/shadcn-studio-smm-banner.png" alt="shadcn/studio banner" width="1200">
-</a>
-
-<p>
-    <a href="https://github.com/themeselection/shadcn-studio/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License"></a>
-    <a href="https://x.com/ShadcnStudio" target="_blank">
-      <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/ShadcnStudio">
-   </a>
-</p>
-
-<a href="https://themeselection.com" target="_blank">
-  <img
-    src="https://cdn.shadcnstudio.com/ts-assets/themeselection/logo/logo.png"
-    alt="themeselection logo"
-    height="30"
-  />
-</a>
-
-<p>
-  Supported by
-  <a href="https://themeselection.com" target="_blank">
-    ThemeSelection
-  </a>
-  , with a commitment to empowering the open-source community.
-</p>
-
----
 
 ## Table of Contents 📋
 
@@ -111,7 +142,7 @@ An open-source & premium collection of copy-and-paste shadcn components, blocks,
 
 ## Documentation 📚
 
-For comprehensive documentation, please visit [shadcn/studio documentation](https://shadcnstudio.com/docs/getting-started/shadcn-studio-template-nextjs).
+For comprehensive documentation, please visit [shadcn/studio documentation](https://shadcnstudio.com/docs/getting-started/introduction).
 
 ## Community 🤝
 
