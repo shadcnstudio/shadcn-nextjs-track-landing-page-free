@@ -1,9 +1,17 @@
+'use client'
+
 import { MenuIcon } from 'lucide-react'
 
 import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuTrigger
+} from '@/components/ui/dropdown-menu'
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -60,18 +68,20 @@ const Header = ({ navigationData, className }: HeaderProps) => {
         <div className='flex gap-4 md:hidden'>
           <ModeToggle />
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger className='md:hidden' asChild>
               <Button variant='outline' size='icon'>
                 <MenuIcon />
                 <span className='sr-only'>Menu</span>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className='w-56' align='end'>
-              {navigationData.map((item, index) => (
-                <DropdownMenuItem key={index}>
-                  <Link href={item.href}>{item.title}</Link>
-                </DropdownMenuItem>
-              ))}
+              <DropdownMenuGroup>
+                {navigationData.map((item, index) => (
+                  <DropdownMenuItem key={index}>
+                    <a href={item.href}>{item.title}</a>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuGroup>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
