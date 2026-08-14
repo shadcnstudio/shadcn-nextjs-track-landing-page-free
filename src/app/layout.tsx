@@ -5,6 +5,8 @@ import type { Metadata } from 'next'
 
 import { ThemeProvider } from '@/components/theme-provider'
 
+import DownloadButton from '@/components/layout/Download'
+
 import { cn } from '@/lib/utils'
 
 import './globals.css'
@@ -111,6 +113,8 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
         <ThemeProvider attribute='class' enableSystem={false} disableTransitionOnChange>
           {children}
         </ThemeProvider>
+
+        <DownloadButton />
       </body>
     </html>
   )
